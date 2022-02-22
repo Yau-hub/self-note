@@ -8,6 +8,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "lib-flexible": "^0.3.2",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "vant": "^3.4.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
@@ -18,6 +21,7 @@
     "@vue/cli-plugin-vuex": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "@vue/compiler-sfc": "^3.0.0",
+    "babel-plugin-import": "^1.13.3",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
   }
