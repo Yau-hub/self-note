@@ -32,14 +32,10 @@
 		setup() {
 			const active = ref('Home');
 			const router = useRouter()
-
 			const tabLs = router.options.routes.find(item => item.name == 'Layout').children
-
 			const onChange = (index) => {
-				console.log(index)
+				// console.log(index)
 			};
-
-
 
 			return {
 				tabLs,

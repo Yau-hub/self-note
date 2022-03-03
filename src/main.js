@@ -6,11 +6,44 @@ import store from './store'
 import '@/styles/common.scss' // global css
 
 import 'lib-flexible'
+import Bmob from "hydrogen-js-sdk";
+Bmob.initialize("2521465b8d97eaf0", "178178");
 
-// import Vant from 'vant';
-// import 'vant/lib/index.css';
-import { Button } from 'vant';
+import { 
+ Button,
+ Cell,
+ NavBar,
+ Divider,
+ CellGroup,
+ Dialog,
+ Form,
+ Field,
+ RadioGroup, 
+ Radio,
+ Notify,
+ Tag,
+ Icon
+ 
+ } from 'vant';
+const app = createApp(App);
 
-createApp(App).use(store).use(router)
+app.config.globalProperties.Bmob = Bmob;
+
+
+
+app.use(store).use(router)
 .use(Button)
+.use(Cell)
+.use(NavBar)
+.use(Divider)
+.use(CellGroup)
+.use(Dialog)
+.use(Form)
+.use(Field)
+.use(RadioGroup)
+.use(Radio)
+.use(Notify)
+.use(Tag)
+.use(Icon)
+
 .mount('#app')
